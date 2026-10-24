@@ -105,12 +105,21 @@ if submitted:
             st.warning("### Prediction: **Did not survive**")
 
         # Probability estimates (if available)
-        if hasattr(model, "predict_proba"):
+       # Probability estimates, only if enabled in the trained model
+        if (
+            hasattr(model, "predict_proba")
+            and getattr(model, "probability", False)
+        ):
             proba = model.predict_proba(input_data)[0]
             st.subheader("Model probability estimates")
             c1, c2 = st.columns(2)
             c1.metric("Did not survive", f"{proba[0]:.1%}")
             c2.metric("Survived", f"{proba[1]:.1%}")
+        else:
+            st.info(
+                "Probability estimates are unavailable for this trained model. "
+                "The survival prediction above is still available."
+            )
 
         # Debug / transparency
         with st.expander("Show encoded input used by the model"):
