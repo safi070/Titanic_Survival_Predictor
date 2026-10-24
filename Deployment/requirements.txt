@@ -1,0 +1,8 @@
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+seaborn==0.13.2
+prettytable==3.18.0
+ipykernel==7.3.0
+notebook==7.6.3
