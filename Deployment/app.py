@@ -29,19 +29,19 @@ st.markdown(
         border: 1px solid #e0e0e0;
         border-radius: 12px;
         padding: 1.4rem 1.2rem 1rem 1.2rem;
-        background-color: #fafafa;
+        background-color: #334a9e;
     }
     
     /* Result boxes */
     .result-survived {
-        background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+        background: linear-gradient(135deg, #155724 0%, #0b3d1b 100%);
         border-left: 6px solid #28a745;
         padding: 1.2rem 1.4rem;
         border-radius: 10px;
         margin: 1rem 0;
     }
     .result-not-survived {
-        background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%);
         border-left: 6px solid #ffc107;
         padding: 1.2rem 1.4rem;
         border-radius: 10px;
